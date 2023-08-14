@@ -28,7 +28,6 @@ function App() {
     return total > 0 ? Math.round((good / total) * 100) : 0;
   };
 
-  // eslint-disable-next-line no-lone-blocks
   {
     return (
       <>
