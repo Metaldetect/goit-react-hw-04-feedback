@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { StyledUl } from './StatisticsStyles';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <>
       <StyledUl>
@@ -13,7 +13,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       </StyledUl>
     </>
   );
-};
+}
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,
