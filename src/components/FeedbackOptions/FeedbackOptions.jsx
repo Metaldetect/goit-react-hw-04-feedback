@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Button } from './FeedbackOptionsStyles';
 
-const FeedbackOptions = ({ options, onButtonClick }) => {
+function FeedbackOptions({ options, onButtonClick }) {
   return (
     <div>
       {options.map(option => (
@@ -15,7 +15,7 @@ const FeedbackOptions = ({ options, onButtonClick }) => {
       ))}
     </div>
   );
-};
+}
 
 FeedbackOptions.propTypes = {
   options: PropTypes.array.isRequired,
